@@ -1,4 +1,27 @@
-.header-logo-icon {
+.logo-mark-icon,
+.taizoin-icon {
+  position: absolute;
+  height: 33.61%;
+  width: 59.1%;
+  top: 32.78%;
+  right: 0;
+  bottom: 33.61%;
+  left: 40.9%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.logo-mark-icon {
+  height: 100%;
+  width: 36.24%;
+  top: 0;
+  right: 63.76%;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  mix-blend-mode: normal;
+}
+.header-logo {
   position: relative;
   width: 133px;
   height: 48.2px;
@@ -486,6 +509,53 @@
     box-sizing: border-box;
   }
 }
+@media screen and (max-width: 600px) {
+  .introduction {
+    font-size: var(--font-size-lg);
+  }
+  .nav-bar {
+    padding-left: var(--padding-mini);
+    padding-right: var(--padding-mini);
+    box-sizing: border-box;
+  }
+  .slides {
+    gap: var(--gap-3xs);
+  }
+  .main-body-section {
+    gap: var(--gap-3xs);
+    padding: var(--padding-mini) var(--padding-mini) var(--padding-11xl);
+    box-sizing: border-box;
+  }
+  .taizo-enables-manufacturing {
+    width: 442px;
+  }
+  .more,
+  .more-careers {
+    flex: unset;
+    align-self: stretch;
+  }
+  .more-careers {
+    flex-direction: column;
+    gap: var(--gap-21xl);
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+  .footer-quick-links {
+    flex-direction: column;
+    gap: var(--gap-31xl);
+  }
+  .social-link {
+    gap: var(--gap-11xl);
+  }
+  .footer-content {
+    gap: var(--gap-41xl);
+  }
+  .footer-t {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
 @media screen and (max-width: 420px) {
   .introduction {
     font-size: var(--font-size-base);
@@ -569,52 +639,5 @@
   .footer-logo-text {
     align-self: stretch;
     width: auto;
-  }
-}
-@media screen and (max-width: 600px) {
-  .introduction {
-    font-size: var(--font-size-lg);
-  }
-  .nav-bar {
-    padding-left: var(--padding-mini);
-    padding-right: var(--padding-mini);
-    box-sizing: border-box;
-  }
-  .slides {
-    gap: var(--gap-3xs);
-  }
-  .main-body-section {
-    gap: var(--gap-3xs);
-    padding: var(--padding-mini) var(--padding-mini) var(--padding-11xl);
-    box-sizing: border-box;
-  }
-  .taizo-enables-manufacturing {
-    width: 442px;
-  }
-  .more,
-  .more-careers {
-    flex: unset;
-    align-self: stretch;
-  }
-  .more-careers {
-    flex-direction: column;
-    gap: var(--gap-21xl);
-    padding-left: 0;
-    box-sizing: border-box;
-  }
-  .footer-quick-links {
-    flex-direction: column;
-    gap: var(--gap-31xl);
-  }
-  .social-link {
-    gap: var(--gap-11xl);
-  }
-  .footer-content {
-    gap: var(--gap-41xl);
-  }
-  .footer-t {
-    padding-left: var(--padding-xl);
-    padding-right: var(--padding-xl);
-    box-sizing: border-box;
   }
 }
