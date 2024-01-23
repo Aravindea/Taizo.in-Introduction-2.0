@@ -22,8 +22,8 @@
   mix-blend-mode: normal;
 }
 .header-logo {
-  position: relative;
   width: 133px;
+  position: relative;
   height: 48.2px;
   mix-blend-mode: normal;
 }
@@ -74,10 +74,10 @@
 .cover-page-icon,
 .nd-page-icon {
   align-self: stretch;
+  height: auto;
   position: relative;
   max-width: 100%;
   overflow: hidden;
-  height: auto;
   flex-shrink: 0;
   object-fit: cover;
 }
@@ -114,14 +114,16 @@
   padding: 42px 160px;
 }
 .footer-logo-icon {
-  position: relative;
   width: 130px;
   height: 46px;
+  position: relative;
   cursor: pointer;
 }
 .taizo-enables-manufacturing {
   align-self: stretch;
+  height: 42px;
   position: relative;
+  display: inline-block;
 }
 .footer-logo-text {
   flex: 1;
@@ -132,6 +134,7 @@
   gap: var(--gap-xl);
 }
 .employer {
+  align-self: stretch;
   cursor: pointer;
 }
 .employer:hover,
@@ -145,14 +148,17 @@
 .jobseeker,
 .pricing {
   text-decoration: none;
-  align-self: stretch;
   position: relative;
   color: inherit;
 }
 .jobseeker {
+  align-self: stretch;
+  height: 21px;
+  display: inline-block;
   cursor: auto;
 }
 .pricing {
+  width: 94px;
   display: none;
 }
 .links,
@@ -208,8 +214,8 @@
   color: var(--color-mediumseagreen);
 }
 .whatsapp-icon {
-  position: relative;
   width: 30px;
+  position: relative;
   height: 30px;
   cursor: pointer;
 }
@@ -221,11 +227,16 @@
   flex-shrink: 0;
 }
 .facebook-icon,
+.linkedin-circled-icon,
 .youtube-icon {
-  position: relative;
   width: 30px;
+  position: relative;
   height: 30px;
   cursor: pointer;
+}
+.linkedin-circled-icon {
+  overflow: hidden;
+  flex-shrink: 0;
 }
 .social-icons {
   display: flex;
@@ -264,6 +275,7 @@
   z-index: 1;
 }
 .a {
+  width: 4px;
   position: absolute;
   margin: 0 !important;
   top: 0;
@@ -271,8 +283,6 @@
   font-family: var(--font-roboto);
   color: inherit;
   text-align: left;
-  width: 4px;
-  flex-shrink: 0;
   text-decoration: none;
   z-index: 2;
 }
@@ -318,17 +328,21 @@
   background-color: var(--color-mediumseagreen);
   height: 1px;
 }
-.copyright-taizo {
-  flex: 1;
+.copyright-taizo,
+.div1,
+.privacy-policy,
+.terms-condition {
+  height: 20px;
   position: relative;
   line-height: 20px;
+  display: inline-block;
+}
+.copyright-taizo {
+  flex: 1;
 }
 .div1,
 .privacy-policy,
 .terms-condition {
-  position: relative;
-  line-height: 20px;
-  display: inline-block;
   flex-shrink: 0;
 }
 .privacy-policy {
@@ -336,11 +350,11 @@
   border: 0;
   padding: 0;
   background-color: transparent;
+  width: 94px;
   font-size: var(--font-size-sm);
   font-family: var(--font-be-vietnam);
   color: var(--color-whitesmoke);
   text-align: left;
-  width: 94px;
 }
 .infotaizoin:hover,
 .privacy-policy:hover,
@@ -356,11 +370,11 @@
   border: 0;
   padding: 0;
   background-color: transparent;
+  width: 123px;
   font-size: var(--font-size-sm);
   font-family: var(--font-be-vietnam);
   color: var(--color-whitesmoke);
   text-align: left;
-  width: 123px;
 }
 .cotainer-2,
 .privacy-terms {
@@ -403,8 +417,8 @@
   color: var(--color-whitesmoke);
 }
 .taizoin-introduction-20 {
-  position: relative;
   width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
